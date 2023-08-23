@@ -26,18 +26,18 @@
 </template>
 
 <script>
-import { ref } from "vue"
-import TaskDetails from "./components/TaskDetails.vue"
-import { useTaskStore } from "./stores/TaskStore"
+import { ref } from "vue";
+import TaskDetails from "./components/TaskDetails.vue";
+import { useTaskStore } from "./stores/TaskStore";
 
 export default {
   components: { TaskDetails },
   setup() {
-    const taskStore = useTaskStore()
+    const taskStore = useTaskStore();
 
-    const filter = ref("all")
+    const filter = ref("all");
 
-    return { taskStore, filter }
+    return { taskStore, filter };
   },
-}
+};
 </script>
